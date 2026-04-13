@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /api/
+
+Sitemap: https://korpai.co/sitemap.xml
+Crawl-delay: 1

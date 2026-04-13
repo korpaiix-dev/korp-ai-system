@@ -1,0 +1,561 @@
+<!--
+  aesthetic_dna: Premium Dark Corporate | Editorial Brutalism | Cinematic AI
+  ui_paradigm: Immersive Scrollytelling & Asymmetrical Bento
+  palette_choice: Void Black (#050505), Obsidian (#111111), Hyper-Silver (#e2e8f0), Neural Blue/Purple Accents
+-->
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth lang-th">
+<head>
+    <meta name="google-site-verification" content="uK7hUIN0TahWzCbyMcksy7tlRUxYDhtukcQdH-oAA3U" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KORP AI AUTOMATION AGENCY | ระบบ AI Automation สำหรับ SME ไทย</title>
+    <meta name="description" content="บริการออกแบบและติดตั้งระบบ AI Automation สำหรับธุรกิจ SME ในประเทศไทย ลดงานซ้ำ เพิ่มรายได้ ยกระดับการตัดสินใจด้วย AI ที่ใช้งานได้จริง" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="keywords" content="AI Automation, ระบบ AI, SME ไทย, workflow automation, AI สำหรับธุรกิจ, ลดงานซ้ำ, เพิ่มรายได้, AI agency ไทย, n8n, private AI" />
+    <link rel="canonical" href="https://korpai.co/" />
+  <meta name="geo.region" content="TH" />
+  <meta name="geo.placename" content="Thailand" />
+  <meta name="content-language" content="th" />
+  <meta name="language" content="Thai" />
+    <meta property="og:title" content="KORP AI AUTOMATION AGENCY | ระบบ AI Automation สำหรับ SME ไทย" />
+    <meta property="og:description" content="บริการออกแบบและติดตั้งระบบ AI Automation สำหรับธุรกิจ SME ในประเทศไทย ลดงานซ้ำ เพิ่มรายได้ ยกระดับการตัดสินใจด้วย AI ที่ใช้งานได้จริง" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://korpai.co/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KORP AI AUTOMATION AGENCY | ระบบ AI Automation สำหรับ SME ไทย" />
+  <meta name="twitter:description" content="บริการออกแบบและติดตั้งระบบ AI Automation สำหรับธุรกิจ SME ในประเทศไทย ลดงานซ้ำ เพิ่มรายได้ ยกระดับการตัดสินใจด้วย AI ที่ใช้งานได้จริง" />
+  <meta name="twitter:image" content="https://korpai.co/assets/logo-korp-horizontal.png" />
+    <meta property="og:image" content="https://korpai.co/assets/hero-korp.jpg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        void: '#050505',
+                        obsidian: '#111111',
+                        'neural-blue': '#3b82f6',
+                        'neural-purple': '#8b5cf6',
+                    },
+                    backgroundImage: {
+                        'hero-mesh': 'radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.15) 0px, transparent 50%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::selection {
+            background: rgba(255, 255, 255, 0.9);
+            color: #000;
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+        .font-th { font-family: 'Prompt', sans-serif; }
+        .font-en { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; }
+        .text-balance { text-wrap: balance; }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.05); }
+        }
+
+        .animate-float { animation: float 12s ease-in-out infinite; }
+        .ambient-glow {
+            position: absolute;
+            filter: blur(120px);
+            opacity: 0.4;
+            animation: pulse-slow 8s infinite alternate;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        
+        .btn-modern::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            z-index: -1;
+        }
+        
+        .btn-modern:hover::before { top: 0; }
+        .btn-modern:hover { color: #050505; border-color: #fff; }
+        .btn-modern:hover .icon-arrow { transform: translateX(4px) rotate(-45deg); }
+        .btn-modern:hover span { color: #050505; }
+
+        .clip-reveal {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            transition: clip-path 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        }
+
+        .group:hover .clip-reveal {
+            clip-path: polygon(5% 5%, 95% 5%, 95% 95%, 5% 95%);
+        }
+
+        .img-zoom { transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1); }
+        .group:hover .img-zoom { transform: scale(1.05); }
+
+        .marquee-container { display: flex; overflow: hidden; white-space: nowrap; }
+        .marquee-content { display: flex; animation: marquee 30s linear infinite; }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        @media (max-width: 639px) {
+            .mobile-icon-only-text { display: none !important; }
+            .mobile-tight-section { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+            .mobile-hide { display: none !important; }
+            .mobile-compact-card card-glow { padding: 1.25rem !important; }
+            .mobile-compact-title { font-size: 1.75rem !important; line-height: 1.15 !important; }
+            .mobile-compact-copy { font-size: 0.95rem !important; line-height: 1.7 !important; }
+            .mobile-floating-cta { bottom: 1rem !important; right: 1rem !important; width: 3.5rem !important; height: 3.5rem !important; }
+            .mobile-footer-cta { display: none !important; }
+            .mobile-case-metric { font-size: 1.6rem !important; }
+        }
+
+        /* Scroll reveal animation */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "KORP AI AUTOMATION AGENCY", "url": "https://korpai.co", "logo": "https://korpai.co/assets/logo-korp-horizontal.png", "description": "AI Automation Agency specializing in business automation systems, AI dashboards, and private AI deployment for SMEs in Thailand.", "sameAs": ["https://www.facebook.com/Korpaiix"], "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "url": "https://www.facebook.com/Korpaiix", "availableLanguage": ["Thai", "English"]}, "areaServed": "TH", "knowsLanguage": ["th", "en"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "KORP AI AUTOMATION AGENCY", "url": "https://korpai.co", "inLanguage": ["th", "en"], "publisher": {"@type": "Organization", "name": "KORP AI AUTOMATION AGENCY"}}</script>
+<link rel="alternate" hreflang="th" href="https://korpai.co/"/>
+<link rel="alternate" hreflang="en" href="https://korpai.co/?lang=en"/>
+<link rel="alternate" hreflang="x-default" href="https://korpai.co/"/>
+
+<style>
+/* === UPGRADE: Visual Enhancements === */
+.section-img-overlay {
+    position: absolute; top: 0; right: 0; width: 40%; height: 100%;
+    background-size: cover; background-position: center;
+    opacity: 0.08; mask-image: linear-gradient(to left, black 30%, transparent);
+    -webkit-mask-image: linear-gradient(to left, black 30%, transparent);
+    pointer-events: none;
+}
+.card-glow:hover {
+    box-shadow: 0 0 30px rgba(59,130,246,0.15), 0 0 60px rgba(139,92,246,0.08);
+    transform: translateY(-2px);
+    transition: all 0.4s ease;
+}
+.gradient-border {
+    border-image: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%) 1;
+}
+.img-card-bg {
+    position: relative; overflow: hidden;
+}
+.img-card-bg::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background-size: cover; background-position: center;
+    opacity: 0.06; z-index: 0;
+    transition: opacity 0.4s ease;
+}
+.img-card-bg:hover::before { opacity: 0.12; }
+.img-card-bg > * { position: relative; z-index: 1; }
+.floating-accent {
+    position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.15;
+    animation: float-accent 8s ease-in-out infinite alternate;
+}
+@keyframes float-accent {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-30px) scale(1.1); }
+}
+.text-gradient {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.hero-img-right {
+    position: absolute; right: -5%; top: 10%; width: 45%; height: 80%;
+    background: url('assets/images/hero-ai-network.jpg') center/cover no-repeat;
+    opacity: 0.2; mask-image: linear-gradient(to left, black 20%, transparent 80%);
+    -webkit-mask-image: linear-gradient(to left, black 20%, transparent 80%);
+    border-radius: 20px; pointer-events: none;
+}
+@media (max-width: 768px) { .hero-img-right { display: none; } }
+</style>
+</head>
+<body class="bg-void text-white antialiased overflow-x-hidden relative">
+
+    <div class="fixed inset-0 pointer-events-none z-[-1] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] mix-blend-overlay"></div>
+    
+    <nav class="w-full z-50 px-4 md:px-6 py-3 bg-void/72 border-b border-white/5 relative overflow-visible">
+        <div class="max-w-[1600px] mx-auto hidden md:flex items-center justify-between gap-4 md:gap-6">
+            <div class="w-auto md:w-1/3 flex justify-start pl-0 md:pl-2 shrink-0">
+                <div class="hidden md:flex items-center gap-4 md:gap-6 text-sm text-white/60">
+                    <a href="services.html" class="hover:text-white transition-colors">Services</a>
+                    <a href="solutions.html" class="hover:text-white transition-colors">Solutions</a>
+                    <a href="case-studies.html" class="hover:text-white transition-colors">Case Studies</a>
+                    <a href="insights.html" class="hover:text-white transition-colors">Insights</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <div class="flex-1 md:w-1/3 flex justify-start md:justify-center relative min-w-0">
+                <a href="index.html" class="inline-flex items-center relative md:absolute top-0 md:-top-8"><img src="assets/korp-horizontal.png" alt="KORP AI AUTOMATION AGENCY logo" class="h-20 sm:h-24 md:h-36 w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]"></a>
+            </div>
+
+            <div class="w-auto md:w-1/3 flex justify-end items-center gap-2 md:gap-4 pr-0 md:pr-2 shrink-0">
+                <div class="flex bg-white/5 p-1 rounded-full border border-white/10 font-en text-[11px] md:text-xs tracking-wider">
+                    <button data-lang-switch="th" class="px-3 md:px-3 py-1.5 rounded-full bg-white text-void font-medium transition-colors active-lang">TH</button>
+                    <button data-lang-switch="en" class="px-3 md:px-3 py-1.5 rounded-full text-white/50 hover:text-white transition-colors">EN</button>
+                </div>
+                <a href="https://www.facebook.com/Korpaiix" target="_blank" rel="noreferrer" class="btn-modern hidden sm:flex px-3 py-1.5 rounded-full border border-white/20 text-[11px] font-en tracking-wide items-center gap-2 z-10">
+                    <span class="relative z-10 inline-flex items-center gap-2 text-white"><i class="ph-fill ph-facebook-logo text-base"></i><span class="mobile-icon-only-text hidden md:inline th-only">ปรึกษาฟรี</span><span class="mobile-icon-only-text hidden md:inline en-only" style="display:none;">Free Consultation</span></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-[1600px] mx-auto flex md:hidden items-center justify-between gap-3 min-h-[56px]">
+            <a href="index.html" class="inline-flex items-center min-w-0 flex-1">
+                <img src="assets/korp-horizontal.png" alt="KORP AI AUTOMATION AGENCY logo" class="h-14 w-auto object-contain">
+            </a>
+            <div class="flex items-center gap-2 shrink-0">
+                <div class="flex bg-white/5 p-1 rounded-full border border-white/10 font-en text-[10px] tracking-wider">
+                    <button data-lang-switch="th" class="px-2.5 py-1 rounded-full bg-white text-void font-medium transition-colors active-lang">TH</button>
+                    <button data-lang-switch="en" class="px-2.5 py-1 rounded-full text-white/50 hover:text-white transition-colors">EN</button>
+                </div>
+                <button id="mobileMenuToggle" aria-label="Open menu" aria-expanded="false" class="w-11 h-11 rounded-full border border-white/15 bg-white/5 backdrop-blur-md flex items-center justify-center text-white text-xl">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenuPanel" class="md:hidden max-w-[1600px] mx-auto overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-out">
+            <div class="mt-3 rounded-[24px] border border-white/10 bg-white/5 backdrop-blur-xl p-3 space-y-2">
+                <a href="services.html" class="block px-4 py-3 rounded-2xl text-white/85 hover:bg-white/10 transition-colors">Services</a>
+                <a href="solutions.html" class="block px-4 py-3 rounded-2xl text-white/85 hover:bg-white/10 transition-colors">Solutions</a>
+                <a href="case-studies.html" class="block px-4 py-3 rounded-2xl text-white/85 hover:bg-white/10 transition-colors">Case Studies</a>
+                <a href="insights.html" class="block px-4 py-3 rounded-2xl text-white/85 hover:bg-white/10 transition-colors">Insights</a>
+                <a href="contact.html" class="block px-4 py-3 rounded-2xl text-white/85 hover:bg-white/10 transition-colors">Contact</a>
+                <a href="https://www.facebook.com/Korpaiix" target="_blank" rel="noreferrer" class="flex items-center justify-center gap-2 mt-2 px-4 py-3 rounded-2xl bg-white text-void font-medium transition-colors">
+                    <i class="ph-fill ph-facebook-logo"></i><span class="th-only">ปรึกษาฟรี</span><span class="en-only" style="display:none;">Free Consultation</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative w-full min-h-[calc(100svh-68px)] md:h-[100svh] flex items-center justify-center pt-2 md:pt-8 overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-hero-mesh"></div>
+            <div class="hero-img-right" aria-hidden="true"><img src="assets/hero-ai-network.jpg" alt="" style="width:100%;height:100%;object-fit:cover;opacity:0.3;mix-blend-mode:luminosity"></div>
+        <div class="absolute inset-0 z-0">
+            <img src="assets/hero-korp.jpg" alt="Abstract AI Neural Network" class="w-full h-full object-cover opacity-20 mix-blend-luminosity animate-float scale-110">
+            <div class="absolute inset-0 bg-gradient-to-b from-void via-void/80 to-void"></div>
+        </div>
+
+        <div class="ambient-glow bg-neural-blue w-[600px] h-[600px] top-[-10%] left-[-10%] rounded-full"></div>
+        <div class="ambient-glow bg-neural-purple w-[500px] h-[500px] bottom-[-10%] right-[10%] rounded-full" style="animation-delay: -4s;"></div>
+
+        <div class="relative z-10 max-w-[1200px] px-5 md:px-6 text-center flex flex-col items-center pt-4 md:pt-0 pb-10 md:pb-0">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-4 md:mb-8 max-w-[92vw]">
+                <i class="ph-fill ph-cpu text-neural-blue"></i>
+                <span class="text-xs font-en tracking-widest text-white/70 uppercase"><span class="th-only">เอเจนซี่วางระบบอัตโนมัติสำหรับองค์กร</span><span class="en-only" style="display:none;">AI systems designed for real business operations</span></span>
+            </div>
+            
+            <h1 class="font-th text-[2.7rem] sm:text-6xl md:text-7xl lg:text-[7rem] font-medium leading-[0.98] md:leading-[1.05] tracking-tight mb-4 md:mb-6 text-balance" lang="th">
+                <span class="th-only">ออกแบบอนาคตธุรกิจ <br>ด้วยระบบ AI ที่ใช้งานได้จริง</span><span class="en-only" style="display:none;">Design the future of business <br>with AI systems built for real operations.</span>
+            </h1>
+            
+            <p class="font-th text-[0.98rem] sm:text-base md:text-xl text-white/50 max-w-2xl font-light mb-5 md:mb-10 md:mb-8 md:mb-12 leading-relaxed">
+                <span class="th-only">เราออกแบบและติดตั้งระบบ AI Automation ให้ธุรกิจ SME ที่ต้องการเพิ่มรายได้ ลดงานซ้ำ และยกระดับการตัดสินใจ — ไม่ใช่แค่ demo แต่ใช้งานจริงได้ตั้งแต่วันแรก</span><span class="en-only" style="display:none;">We transform complex operations into intelligent systems that reduce cost, improve efficiency, and create strategic advantage.</span>
+            </p>
+
+            <a href="#what-we-build" class="w-14 h-14 md:w-20 md:h-20 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-void transition-colors group">
+                <i class="ph ph-arrow-down text-xl md:text-2xl group-hover:animate-bounce"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="py-14 md:py-32 px-4 md:px-6 relative border-t border-white/5 overflow-hidden mobile-tight-section" id="what-we-build" data-upgraded="true">
+<div class="floating-accent" style="width:300px;height:300px;background:#3b82f6;top:20%;left:5%;"></div>
+<div class="floating-accent" style="width:250px;height:250px;background:#8b5cf6;bottom:10%;right:10%;animation-delay:4s;"></div>
+        <div class="absolute inset-0">
+            <img src="assets/section-ai-office.jpg" alt="Premium AI office background" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/72 to-black/84"></div>
+        </div>
+        <div class="max-w-[1600px] mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 md:gap-8 mb-8 md:mb-14">
+                <div>
+                    <h2 class="font-th text-3xl md:text-6xl font-medium leading-tight text-white">ระบบที่เราออกแบบให้ธุรกิจได้จริง</h2>
+                </div>
+                <div class="max-w-2xl mobile-hide md:block">
+                    <p class="text-white/60 text-sm md:text-lg leading-relaxed md:leading-loose font-light">เราไม่ได้ขาย AI แบบกว้าง ๆ แต่สร้างระบบที่เชื่อมกับงานจริงของธุรกิจ เพื่อให้ทีมทำงานเร็วขึ้น ผู้บริหารเห็นภาพชัดขึ้น และองค์กรขยายต่อได้ง่ายขึ้น</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6 relative z-10">
+                <div class="backdrop-blur-md bg-black/35 border border-white/10 rounded-[24px] md:rounded-[28px] p-5 md:p-10 mobile-compact-card card-glow">
+                    <div class="text-white/35 text-xs uppercase tracking-[0.18em] mb-4 md:mb-6">01</div>
+                    <h3 class="font-th text-[1.55rem] md:text-3xl font-medium mb-3 md:mb-4"><i class="ph-fill ph-chart-line-up text-3xl text-neural-blue mb-2 block"></i>Sales Growth Systems</h3>
+                    <p class="text-white/60 leading-7 md:leading-loose text-[0.95rem] md:text-base">ระบบช่วยรับลูกค้า คัด lead และ follow-up เพื่อเพิ่มโอกาสปิดการขาย</p>
+                </div>
+                <div class="backdrop-blur-md bg-black/35 border border-white/10 rounded-[24px] md:rounded-[28px] p-5 md:p-10 mobile-compact-card card-glow">
+                    <div class="text-white/35 text-xs uppercase tracking-[0.18em] mb-4 md:mb-6">02</div>
+                    <h3 class="font-th text-[1.55rem] md:text-3xl font-medium mb-3 md:mb-4"><i class="ph-fill ph-gear-six text-3xl text-neural-blue mb-2 block"></i>Back-office Automation</h3>
+                    <p class="text-white/60 leading-7 md:leading-loose text-[0.95rem] md:text-base">ลดงานซ้ำ งานแอดมิน และขั้นตอนภายในที่กินเวลาทีม</p>
+                </div>
+                <div class="backdrop-blur-md bg-black/35 border border-white/10 rounded-[24px] md:rounded-[28px] p-5 md:p-10 mobile-compact-card card-glow">
+                    <div class="text-white/35 text-xs uppercase tracking-[0.18em] mb-4 md:mb-6">03</div>
+                    <h3 class="font-th text-[1.55rem] md:text-3xl font-medium mb-3 md:mb-4"><i class="ph-fill ph-monitor text-3xl text-neural-blue mb-2 block"></i>AI Dashboard / Command Center</h3>
+                    <p class="text-white/60 leading-7 md:leading-loose text-[0.95rem] md:text-base">รวมข้อมูลสำคัญไว้ในจุดเดียว เพื่อให้ผู้บริหารตัดสินใจได้เร็วขึ้น</p>
+                </div>
+                <div class="backdrop-blur-md bg-black/35 border border-white/10 rounded-[24px] md:rounded-[28px] p-5 md:p-10 mobile-compact-card card-glow mobile-hide">
+                    <div class="text-white/35 text-xs uppercase tracking-[0.18em] mb-4 md:mb-6">04</div>
+                    <h3 class="font-th text-[1.55rem] md:text-3xl font-medium mb-3 md:mb-4"><i class="ph-fill ph-shield-check text-3xl text-neural-blue mb-2 block"></i>Private AI Deployment</h3>
+                    <p class="text-white/60 leading-7 md:leading-loose text-[0.95rem] md:text-base">สำหรับองค์กรที่ต้องการความปลอดภัยและการควบคุมข้อมูลระดับสูง</p>
+                </div>
+                <div class="backdrop-blur-md bg-black/35 border border-white/10 rounded-[24px] md:rounded-[28px] p-5 md:p-10 mobile-compact-card card-glow mobile-hide">
+                    <div class="text-white/35 text-xs uppercase tracking-[0.18em] mb-4 md:mb-6">05</div>
+                    <h3 class="font-th text-[1.55rem] md:text-3xl font-medium mb-3 md:mb-4"><i class="ph-fill ph-cube text-3xl text-neural-blue mb-2 block"></i>2D / 3D AI Office</h3>
+                    <p class="text-white/60 leading-7 md:leading-loose text-[0.95rem] md:text-base">ประสบการณ์การมองเห็นการทำงานของ AI agents และ workflow ในรูปแบบที่เข้าใจง่ายขึ้น</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-6 bg-void border-y border-white/5 font-en text-4xl md:text-7xl font-light tracking-tighter text-white/10 uppercase mobile-hide">
+        <div class="marquee-container">
+            <div class="marquee-content gap-5 md:gap-8">
+                <span>KORP AI — วางระบบ AI เพื่อธุรกิจคุณ —</span>
+                <span>Automated Futures —</span>
+                <span>Intelligent Systems —</span>
+                <span>KORP AI — วางระบบ AI เพื่อธุรกิจคุณ —</span>
+                <span>Automated Futures —</span>
+                <span>Intelligent Systems —</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-14 md:py-32 bg-void relative z-10 mobile-tight-section" id="work" style="position:relative">
+        <div class="max-w-[1600px] mx-auto px-4 md:px-6 space-y-14 md:space-y-32">
+            <div class="flex justify-between items-end border-b border-white/10 pb-6 md:pb-8">
+                <h2 class="font-th text-3xl md:text-6xl font-semibold">ผลงานและความสำเร็จ</h2>
+                <div class="hidden md:block text-right">
+                    <p class="font-en text-sm tracking-widest text-white/40">PROVEN IMPACT</p>
+                    <p class="font-en text-sm text-white/60">02 PROJECTS</p>
+                </div>
+            </div>
+
+            <article class="group relative grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-12 items-center">
+                <div class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center space-y-5 md:space-y-8 pr-0 md:pr-8">
+                    <div class="flex flex-wrap gap-3 font-en text-xs tracking-widest">
+                        <span class="px-3 py-1 rounded-full border border-white/20 text-white/60">SUPPLY CHAIN</span>
+                        <span class="px-3 py-1 rounded-full border border-neural-blue/30 text-neural-blue bg-neural-blue/5">PREDICTIVE AI</span>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-en text-[2.15rem] md:text-7xl font-bold tracking-tighter mb-3 md:mb-4 text-transparent bg-clip-text bg-gradient-to-br from-white to-white/40 mobile-compact-title">ธุรกิจโบรคเกอร์เกษตร</h3>
+                        <p class="font-th text-base md:text-xl text-white/60 font-light leading-relaxed mobile-compact-copy">
+                            ระบบพยากรณ์และจัดการซัพพลายเชนอัจฉริยะ ลดความสูญเสียทางวัตถุดิบลง 34% ด้วยการดึงข้อมูลและวิเคราะห์แบบ Real-time ผ่านการเชื่อมต่อ API ของโรงงาน
+                        </p>
+                    </div>
+
+                    <div class="pt-5 md:pt-6 border-t border-white/10">
+                        <div class="grid grid-cols-2 gap-4 md:gap-8">
+                            <div>
+                                <p class="font-en text-3xl md:text-4xl font-light text-white mobile-case-metric">-34%</p>
+                                <p class="font-th text-sm text-white/40 mt-1">Waste Reduction</p>
+                            </div>
+                            <div>
+                                <p class="font-en text-3xl md:text-4xl font-light text-white mobile-case-metric">100%</p>
+                                <p class="font-th text-sm text-white/40 mt-1">Process Automated</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 order-1 lg:order-2 h-[260px] md:h-[500px] lg:h-[700px] relative overflow-hidden rounded-2xl bg-obsidian clip-reveal">
+                    <img src="assets/case-agri.jpg" alt="Agricultural brokerage and supply chain operations" class="w-full h-full object-cover img-zoom">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent"></div>
+                    <div class="absolute top-4 md:top-6 right-4 md:right-6 flex items-center gap-2 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-[10px] md:text-xs font-en tracking-widest text-white/70">
+                        <i class="ph-fill ph-aperture animate-spin" style="animation-duration: 4s;"></i> SCANNING SYSTEMS
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="py-14 md:py-24 md:py-20 md:py-32 bg-obsidian border-t border-white/5 relative overflow-hidden mobile-tight-section">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.08),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.08),transparent_30%)]"></div>
+        <div class="max-w-[1600px] mx-auto px-4 md:px-6 relative z-10">
+            <div class="grid grid-cols-1 xl:grid-cols-[0.9fr,1.4fr] gap-4 md:gap-6 md:gap-14 items-start mb-6 md:mb-14 md:mb-6 md:mb-10 md:mb-16">
+                <div class="max-w-xl">
+                    <div class="font-en text-[11px] md:text-xs tracking-[0.22em] uppercase text-white/40 mb-4">Core Engineering Capabilities</div>
+                    <h2 class="font-th text-3xl md:text-5xl xl:text-6xl font-medium leading-tight text-white mb-5 md:mb-6">โครงสร้างระบบที่ทำให้ AI ใช้งานได้จริงในธุรกิจ</h2>
+                    <p class="font-th text-white/50 text-sm md:text-lg leading-relaxed md:leading-loose font-light">เราไม่ได้วาง AI เป็นชิ้นแยก แต่เชื่อม workflow, data และ decision layer เข้าด้วยกัน เพื่อให้สิ่งที่สร้างช่วยทีมทำงานเร็วขึ้นและช่วยผู้บริหารตัดสินใจได้ดีขึ้น</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 md:gap-6">
+                    <div class="group rounded-[24px] md:rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-md p-5 md:p-8 hover:border-white/20 hover:bg-white/[0.05] transition-all duration-300 mobile-compact-card card-glow">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl border border-neural-blue/30 bg-neural-blue/10 text-neural-blue flex items-center justify-center mb-6 md:mb-8">
+                            <i class="ph-light ph-git-merge text-2xl md:text-3xl transition-transform duration-300 group-hover:scale-110"></i>
+                        </div>
+                        <div class="font-en text-[11px] tracking-[0.18em] uppercase text-white/30 mb-3">01 / Automation Layer</div>
+                        <h3 class="font-en text-xl md:text-2xl font-medium mb-4 text-white">Workflow Automation</h3>
+                        <p class="font-th text-white/45 text-[0.95rem] md:text-base leading-7 md:leading-loose font-light">จัดระเบียบงานเอกสาร งานอนุมัติ และขั้นตอนที่ทำซ้ำให้กลายเป็น flow ที่เร็วขึ้น เสถียรขึ้น และลดภาระทีมปฏิบัติการ</p>
+                    </div>
+
+                    <div class="group rounded-[24px] md:rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-md p-5 md:p-8 hover:border-white/20 hover:bg-white/[0.05] transition-all duration-300 mobile-compact-card card-glow">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl border border-white/20 bg-white/5 text-white flex items-center justify-center mb-6 md:mb-8">
+                            <i class="ph-light ph-brain text-2xl md:text-3xl transition-transform duration-300 group-hover:scale-110"></i>
+                        </div>
+                        <div class="font-en text-[11px] tracking-[0.18em] uppercase text-white/30 mb-3">02 / Intelligence Layer</div>
+                        <h3 class="font-en text-xl md:text-2xl font-medium mb-4 text-white">Custom LLM Solutions</h3>
+                        <p class="font-th text-white/45 text-[0.95rem] md:text-base leading-7 md:leading-loose font-light">พัฒนา AI Assistant, Chatbot และ workflow อัจฉริยะที่ตอบโจทย์งานจริงขององค์กร พร้อมคุมเรื่องข้อมูลและบริบทการใช้งาน</p>
+                    </div>
+
+                    <div class="group rounded-[24px] md:rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-md p-5 md:p-8 hover:border-white/20 hover:bg-white/[0.05] transition-all duration-300 mobile-compact-card card-glow mobile-hide">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl border border-neural-purple/30 bg-neural-purple/10 text-neural-purple flex items-center justify-center mb-6 md:mb-8">
+                            <i class="ph-light ph-database text-2xl md:text-3xl transition-transform duration-300 group-hover:scale-110"></i>
+                        </div>
+                        <div class="font-en text-[11px] tracking-[0.18em] uppercase text-white/30 mb-3">03 / Data Layer</div>
+                        <h3 class="font-en text-xl md:text-2xl font-medium mb-4 text-white">Data Operations</h3>
+                        <p class="font-th text-white/45 text-[0.95rem] md:text-base leading-7 md:leading-loose font-light">รวมข้อมูล ทำความสะอาด และสร้าง data pipeline เพื่อให้ธุรกิจเห็นภาพรวมชัดขึ้นและต่อยอดเป็น dashboard หรือ command center ได้</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="relative pt-16 md:pt-32 pb-10 md:pb-12 bg-void overflow-hidden flex flex-col items-center justify-center">
+        <h2 class="absolute top-[10%] left-1/2 -translate-x-1/2 font-en text-[15vw] font-bold text-white/[0.02] tracking-tighter whitespace-nowrap pointer-events-none select-none mobile-hide">
+            KORP AI
+        </h2>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center mb-6 md:mb-14 md:mb-24 mobile-footer-cta">
+            <h2 class="font-th text-3xl md:text-6xl font-medium mb-6 md:mb-8">
+                พร้อมให้ AI ทำงานแทนทีมคุณแล้วหรือยัง?
+            </h2>
+            <p class="font-th text-white/50 text-lg md:text-xl font-light mb-6 md:mb-10 max-w-xl mx-auto">
+                ทักเพจ Korpaiix เพื่อคุยโจทย์และประเมินความเป็นไปได้เชิงธุรกิจ
+            </p>
+            <a href="https://www.facebook.com/Korpaiix" target="_blank" rel="noreferrer" class="btn-modern inline-flex items-center gap-3 px-8 py-5 rounded-full bg-white text-void font-en font-medium tracking-wide hover:bg-transparent hover:text-white border border-transparent transition-all">
+                <span>CONSULT VIA FACEBOOK</span>
+                <i class="ph-fill ph-arrow-circle-right text-xl"></i>
+            </a>
+        </div>
+
+        <div class="w-full max-w-[1600px] mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 items-end border-t border-white/10 pt-8 relative z-10">
+            <div class="flex flex-col gap-2 text-center md:text-left">
+                <div class="font-en text-xl md:text-2xl font-bold tracking-[0.2em] text-white">KORP<span class="text-neural-blue text-xs align-top">AI</span></div>
+                <p class="font-en text-[11px] md:text-xs text-white/40 tracking-[0.24em] md:tracking-widest">© 2026 KORP AUTOMATION AGENCY. ALL RIGHTS RESERVED.</p>
+            </div>
+            
+            <div class="hidden md:flex gap-6 justify-end font-en text-sm tracking-wide text-white/60">
+                <a href="contact.html" class="hover:text-white transition-colors">CONTACT</a>
+                <a href="services.html" class="hover:text-white transition-colors">SERVICES</a>
+                <a href="case-studies.html" class="hover:text-white transition-colors">CASE STUDIES</a>
+                <a href="insights.html" class="hover:text-white transition-colors">INSIGHTS</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://www.facebook.com/Korpaiix" target="_blank" rel="noreferrer" class="fixed bottom-5 right-5 md:bottom-6 md:right-6 z-[80] inline-flex items-center justify-center rounded-full bg-white text-black w-14 h-14 md:w-auto md:h-auto md:px-5 md:py-4 shadow-2xl shadow-black/30 border border-white/70 hover:scale-[1.02] transition-transform mobile-floating-cta">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white text-xl"><i class="ph-fill ph-facebook-logo"></i></span>
+        <span class="hidden md:block leading-tight ml-3">
+            <span class="th-only text-black font-medium">ปรึกษาฟรี</span><span class="en-only text-black font-medium" style="display:none;">Free Consultation</span>
+        </span>
+    </a>
+
+    <script>
+        (() => {
+            const menuBtn = document.getElementById('mobileMenuToggle');
+            const panel = document.getElementById('mobileMenuPanel');
+            if (!menuBtn || !panel) return;
+            menuBtn.addEventListener('click', () => {
+                const open = panel.classList.contains('max-h-[420px]');
+                panel.classList.toggle('max-h-0', open);
+                panel.classList.toggle('opacity-0', open);
+                panel.classList.toggle('mt-0', open);
+                panel.classList.toggle('max-h-[420px]', !open);
+                panel.classList.toggle('opacity-100', !open);
+                menuBtn.setAttribute('aria-expanded', String(!open));
+            });
+        })();
+    </script>
+
+
+    <script>
+    (() => {
+        const targets = document.querySelectorAll('.mobile-compact-card card-glow');
+        if (!targets.length) return;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        targets.forEach((el, i) => {
+            el.classList.add('reveal-up');
+            el.style.transitionDelay = (i % 3) * 100 + 'ms';
+            observer.observe(el);
+        });
+        // Safety: reveal all after 3s in case observer fails
+        setTimeout(() => {
+            targets.forEach(el => el.classList.add('is-visible'));
+        }, 3000);
+    })();
+    </script>
+</body>
+</html>
+<script>
+(() => {
+ const root=document.documentElement;
+ const thEls=()=>document.querySelectorAll('.th-only');
+ const enEls=()=>document.querySelectorAll('.en-only');
+ const buttons=document.querySelectorAll('[data-lang-switch]');
+ const setLang=(lang)=>{
+   root.classList.remove('lang-th','lang-en');
+   root.classList.add(`lang-${lang}`);
+   root.lang=lang;
+   localStorage.setItem('korp-aidesigner-lang',lang);
+   thEls().forEach(el=>el.style.display = lang==='th' ? "inline" : "none");
+   enEls().forEach(el=>el.style.display = lang==='en' ? "inline" : "none");
+   buttons.forEach(btn=>{
+     if(btn.dataset.langSwitch===lang){btn.classList.add('bg-white','text-void');btn.classList.remove('text-white/50');}
+     else{btn.classList.remove('bg-white','text-void');btn.classList.add('text-white/50');}
+   });
+ };
+ buttons.forEach(btn=>btn.addEventListener('click',()=>setLang(btn.dataset.langSwitch)));
+ setLang(localStorage.getItem('korp-aidesigner-lang')||'th');
+})();
+</script>

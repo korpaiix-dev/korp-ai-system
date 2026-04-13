@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline": "#70767d",
+                      "surface-container": "#161a1e",
+                      "background": "#0c0e10",
+                      "on-secondary-fixed": "#4e3d00",
+                      "on-secondary-container": "#e1bb43",
+                      "surface-dim": "#0c0e10",
+                      "outline-variant": "#42494f",
+                      "primary-fixed": "#dae2ff",
+                      "surface": "#0c0e10",
+                      "secondary-container": "#4a3900",
+                      "on-tertiary-fixed-variant": "#585f72",
+                      "on-secondary-fixed-variant": "#705900",
+                      "on-error-container": "#ff9993",
+                      "primary-dim": "#9eb7ff",
+                      "on-surface-variant": "#a6acb3",
+                      "on-error": "#490106",
+                      "inverse-primary": "#0e57d0",
+                      "on-tertiary": "#565d70",
+                      "on-primary-container": "#c0cfff",
+                      "tertiary": "#f5f6ff",
+                      "on-primary": "#003a94",
+                      "error": "#ee7d77",
+                      "secondary-fixed-dim": "#f8d056",
+                      "primary": "#b2c5ff",
+                      "on-background": "#e0e6ed",
+                      "primary-container": "#0040a2",
+                      "on-primary-fixed-variant": "#0253cd",
+                      "inverse-on-surface": "#545557",
+                      "error-dim": "#bb5551",
+                      "tertiary-container": "#e1e8ff",
+                      "on-surface": "#e0e6ed",
+                      "surface-bright": "#262d33",
+                      "tertiary-fixed": "#e1e8ff",
+                      "on-primary-fixed": "#003993",
+                      "surface-variant": "#20262c",
+                      "secondary-dim": "#bd9a22",
+                      "surface-container-low": "#111416",
+                      "inverse-surface": "#f9f9fc",
+                      "tertiary-fixed-dim": "#d3d9f0",
+                      "on-tertiary-fixed": "#3c4355",
+                      "on-secondary": "#291f00",
+                      "surface-container-highest": "#20262c",
+                      "secondary": "#bd9a22",
+                      "on-tertiary-container": "#4e5568",
+                      "surface-container-lowest": "#000000",
+                      "tertiary-dim": "#d3d9f0",
+                      "error-container": "#7f2927",
+                      "secondary-fixed": "#ffe088",
+                      "surface-tint": "#b2c5ff",
+                      "primary-fixed-dim": "#c6d3ff",
+                      "surface-container-high": "#1b2025"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Newsreader"],
+                      "body": ["Manrope"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0c0e10;
+            color: #e0e6ed;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .newsreader { font-family: 'Newsreader', serif; }
+        .manrope { font-family: 'Manrope', sans-serif; }
+        .inter { font-family: 'Inter', sans-serif; }
+        .tonal-transition-surface-container-low { background-color: #111416; }
+    </style>
+<link rel="alternate" hreflang="th" href="https://korpai.co/index-stitch.html"/>
+<link rel="alternate" hreflang="en" href="https://korpai.co/index-stitch.html?lang=en"/>
+<link rel="alternate" hreflang="x-default" href="https://korpai.co/index-stitch.html"/>
+</head>
+<body class="bg-background selection:bg-primary-container selection:text-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-xl shadow-2xl shadow-blue-900/5">
+<nav class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-semibold tracking-tighter text-neutral-100 uppercase">KORP AI</div>
+<div class="hidden md:flex gap-12">
+<a class="text-neutral-400 font-normal hover:text-neutral-200 transition-colors font-['Newsreader'] tracking-[0.02em] font-light" href="#">Solutions</a>
+<a class="text-neutral-400 font-normal hover:text-neutral-200 transition-colors font-['Newsreader'] tracking-[0.02em] font-light" href="#">Architecture</a>
+<a class="text-neutral-400 font-normal hover:text-neutral-200 transition-colors font-['Newsreader'] tracking-[0.02em] font-light" href="#">Insights</a>
+<a class="text-neutral-400 font-normal hover:text-neutral-200 transition-colors font-['Newsreader'] tracking-[0.02em] font-light" href="#">Global</a>
+</div>
+<div class="flex items-center gap-8">
+<button class="text-neutral-400 font-normal hover:text-neutral-200 transition-colors font-['Newsreader'] tracking-[0.02em] font-light">TH/EN</button>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-label text-[10px] uppercase tracking-[0.05em] px-6 py-2 rounded-sm scale-95 active:opacity-80 transition-all duration-300">
+                    Consultation
+                </button>
+</div>
+</nav>
+</header>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center px-12 pt-32 pb-24 overflow-hidden">
+<!-- Decorative Element -->
+<div class="absolute top-1/2 right-0 -translate-y-1/2 w-1/2 h-full opacity-20 pointer-events-none">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/30 via-transparent to-transparent"></div>
+</div>
+<div class="max-w-4xl z-10">
+<h1 class="text-7xl md:text-8xl newsreader font-light leading-[1.1] tracking-tight mb-8">
+                    ยกระดับธุรกิจสู่ความชาญฉลาดด้วยระบบ <span class="italic text-primary-dim">AI ที่ใช้งานได้จริง</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl manrope font-light leading-relaxed mb-12">
+                    KORP AI มุ่งเน้นการเปลี่ยนโครงสร้างธุรกิจแบบดั้งเดิมให้เป็นระบบอัตโนมัติที่ชาญฉลาด เพิ่มศักยภาพการแข่งขันด้วยเทคโนโลยีที่ออกแบบเฉพาะสำหรับองค์กรไทย
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-label text-sm uppercase tracking-[0.05em] px-10 py-4 rounded-sm transition-transform active:scale-95">
+                        Start Architecture Design
+                    </button>
+<button class="bg-surface-container-highest/50 backdrop-blur-sm text-primary font-label text-sm uppercase tracking-[0.05em] px-10 py-4 rounded-sm outline outline-1 outline-primary/15 hover:bg-surface-container-highest transition-all">
+                        View Solutions
+                    </button>
+</div>
+</div>
+</section>
+<!-- Secondary Intro -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-5">
+<h2 class="text-4xl newsreader font-light text-on-surface leading-tight mb-6">
+                        สถาปัตยกรรมทางปัญญา <br/>ที่เหนือกว่าแค่การคำนวณ
+                    </h2>
+</div>
+<div class="md:col-span-7">
+<p class="text-lg text-on-surface-variant manrope font-light leading-loose">
+                        ที่ KORP AI เราไม่ได้มอง AI เป็นเพียงเครื่องมือ แต่เรามองเป็น "Sovereign Intelligence" หรือปัญญาอธิปไตยของธุรกิจคุณ 
+                        ระบบที่เราสร้างขึ้นจะผสานรวมเข้ากับกระบวนการทำงานเดิมอย่างแนบเนียน พร้อมเรียนรู้และปรับตัวเพื่อสร้างมูลค่าที่จับต้องได้ 
+                        ตั้งแต่การลดต้นทุนดำเนินการไปจนถึงการขยายขีดความสามารถในการทำกำไร
+                    </p>
+</div>
+</div>
+</section>
+<!-- Core Services: Bento Grid -->
+<section class="py-48 px-12">
+<div class="max-w-[1920px] mx-auto">
+<div class="mb-24 flex justify-between items-end">
+<h2 class="text-5xl newsreader font-light">Core Services</h2>
+<span class="inter text-[10px] tracking-[0.2em] text-primary uppercase">Expertise Spectrum</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="md:col-span-2 bg-surface-container-low p-12 flex flex-col justify-between min-h-[400px] hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="monitoring">monitoring</span>
+<span class="inter text-[10px] text-on-surface-variant">01</span>
+</div>
+<div>
+<h3 class="text-3xl newsreader font-light mb-4">Sales Growth Systems</h3>
+<p class="text-on-surface-variant manrope font-light max-w-md">ระบบวิเคราะห์และเร่งยอดขายอัตโนมัติด้วย Predictive AI ที่เข้าใจพฤติกรรมลูกค้าเชิงลึก</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-12 flex flex-col justify-between min-h-[400px] hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="settings_account_box">settings_account_box</span>
+<span class="inter text-[10px] text-on-surface-variant">02</span>
+</div>
+<div>
+<h3 class="text-3xl newsreader font-light mb-4">Back-office Automation</h3>
+<p class="text-on-surface-variant manrope font-light">ลดภาระงานรูทีนด้วยหุ่นยนต์ซอฟต์แวร์ที่ทำงานได้รวดเร็วและไร้ข้อผิดพลาด 24/7</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-12 flex flex-col justify-between min-h-[400px] hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="hub">hub</span>
+<span class="inter text-[10px] text-on-surface-variant">03</span>
+</div>
+<div>
+<h3 class="text-3xl newsreader font-light mb-4">AI Command Center</h3>
+<p class="text-on-surface-variant manrope font-light">ศูนย์บัญชาการข้อมูลกลาง รวบรวมทุกมิติของธุรกิจไว้ในที่เดียวเพื่อการตัดสินใจที่แม่นยำ</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low p-12 flex flex-col justify-between min-h-[400px] hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="security">security</span>
+<span class="inter text-[10px] text-on-surface-variant">04</span>
+</div>
+<div>
+<h3 class="text-3xl newsreader font-light mb-4">Private AI Deployment</h3>
+<p class="text-on-surface-variant manrope font-light">ติดตั้งระบบ AI ในโครงสร้างพื้นฐานของคุณเองเพื่อความปลอดภัยและความเป็นส่วนตัวของข้อมูลระดับสูงสุด</p>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-low p-12 flex flex-col justify-between min-h-[400px] hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="view_in_ar">view_in_ar</span>
+<span class="inter text-[10px] text-on-surface-variant">05</span>
+</div>
+<div>
+<h3 class="text-3xl newsreader font-light mb-4">2D/3D AI Office</h3>
+<p class="text-on-surface-variant manrope font-light">ยกระดับการทำงานผ่าน Spatial AI และระบบออฟฟิศเสมือนจริงที่เชื่อมต่อพนักงานและข้อมูล</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology -->
+<section class="py-32 px-12 bg-surface-container-lowest">
+<div class="max-w-[1920px] mx-auto">
+<div class="text-center mb-24">
+<h2 class="text-5xl newsreader font-light mb-4">Our Methodology</h2>
+<p class="text-on-surface-variant inter text-[10px] uppercase tracking-[0.2em]">The Blueprint for Success</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 outline outline-1 outline-outline-variant/15">
+<div class="p-16 border-r border-outline-variant/15">
+<span class="inter text-6xl font-extralight text-outline/20 mb-8 block">01</span>
+<h3 class="text-2xl newsreader mb-4">Consult</h3>
+<p class="text-on-surface-variant manrope font-light">สำรวจความเจ็บปวด (Pain points) และโอกาสในธุรกิจเพื่อกำหนดทิศทางที่ถูกต้อง</p>
+</div>
+<div class="p-16 border-r border-outline-variant/15">
+<span class="inter text-6xl font-extralight text-outline/20 mb-8 block">02</span>
+<h3 class="text-2xl newsreader mb-4">Design</h3>
+<p class="text-on-surface-variant manrope font-light">ออกแบบสถาปัตยกรรมระบบ AI ที่ยืดหยุ่นและรองรับการขยายตัวในอนาคต</p>
+</div>
+<div class="p-16">
+<span class="inter text-6xl font-extralight text-outline/20 mb-8 block">03</span>
+<h3 class="text-2xl newsreader mb-4">Implement</h3>
+<p class="text-on-surface-variant manrope font-light">ติดตั้ง ทดสอบ และดูแลรักษา เพื่อให้มั่นใจว่าระบบทำงานได้อย่างเต็มประสิทธิภาพ</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Studies -->
+<section class="py-48 px-12">
+<div class="max-w-[1920px] mx-auto">
+<div class="flex items-center gap-12 mb-24">
+<h2 class="text-6xl newsreader font-light shrink-0">Case Studies</h2>
+<div class="h-[1px] w-full bg-outline-variant/30"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Case 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[16/9] mb-8 overflow-hidden">
+<img alt="Premium restaurant interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern high-end restaurant interior with moody lighting, dark textures, and focused warm spotlights on tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlye0jrMtGf0m29o8h1CbvUhOfiDbEKxYMCVRTFehD9C72N__cadBH4b9Z8CqVCr_zYzHUZc8CjX6hVKKHET2671QaTJD6FssKg0JGV-5m9lfkTZ64XaCLrlbTR0HpVxbunW1i9fR8B0Ttuz7wLVfVlQ6arWTo48PNhpfrhKnQWTo0z7VD_kelsyL-qk_rc38Y28W_NPp8Yp0ZdtlVTL8nFmvEYTqTzA-mgV9xvTTz-_BIlGGwCjk82JpeWrmEjn-j40kVlCyvlIM"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<h4 class="text-sm inter text-primary uppercase tracking-[0.1em] mb-3">F&amp;B Automation</h4>
+<h3 class="text-3xl newsreader font-light mb-4">PATA FOOD: Intelligent Inventory &amp; Prediction</h3>
+<p class="text-on-surface-variant manrope font-light max-w-lg">เพิ่มกำไรขึ้น 15% ผ่านระบบคาดการณ์วัตถุดิบแม่นยำและการจัดการคิวอัตโนมัติ</p>
+</div>
+<!-- Case 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[16/9] mb-8 overflow-hidden">
+<img alt="Dynamic event light setup" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract colorful light beams in a dark event space, creating a sense of movement and professional technology atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfAZrag8hu3J3MVi0oJNH4qeD3vpCzi3QR-L8oSpLPcqB2SAijGHN5_rbW3BeJqUJXmBuYFb4Tz1tPgRiPtolHOzrzHBlSEX0MvREpmNlNhweurosOIwe2wVhjcwZE9-vUPoAxoUm4bfEf5F9or9XxBQCOrv7tiFdx7SxDSPy0ZhLTPhrTXKRa3kWH7hQ7Ps28DGoZQEuwA0-4W5B55HKqdxqqJDl5FQEYdWYYFzgnJSCWexznZOwA9SNCXwJ_xFEY3KD8vO-8U5U"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<h4 class="text-sm inter text-primary uppercase tracking-[0.1em] mb-3">Event Operations</h4>
+<h3 class="text-3xl newsreader font-light mb-4">Event Organizer System: Real-time Orchestration</h3>
+<p class="text-on-surface-variant manrope font-light max-w-lg">รวมระบบลงทะเบียน วิเคราะห์ความหนาแน่น และระบบความปลอดภัยด้วย AI Vision</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Insights -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-[1920px] mx-auto">
+<div class="mb-20">
+<h2 class="text-4xl newsreader font-light italic">Recent Insights</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<article class="space-y-6">
+<span class="text-on-surface-variant text-[10px] inter uppercase tracking-[0.1em]">Strategy — Mar 2024</span>
+<h5 class="text-xl newsreader leading-snug hover:text-primary transition-colors cursor-pointer">ทำไม GenAI ถึงเป็นจุดเปลี่ยนสำคัญของ SME ไทยในปีนี้</h5>
+<div class="w-12 h-[1px] bg-primary"></div>
+</article>
+<article class="space-y-6">
+<span class="text-on-surface-variant text-[10px] inter uppercase tracking-[0.1em]">Technical — Feb 2024</span>
+<h5 class="text-xl newsreader leading-snug hover:text-primary transition-colors cursor-pointer">ความปลอดภัยของข้อมูล: Private AI vs Public LLM</h5>
+<div class="w-12 h-[1px] bg-primary"></div>
+</article>
+<article class="space-y-6">
+<span class="text-on-surface-variant text-[10px] inter uppercase tracking-[0.1em]">Architecture — Jan 2024</span>
+<h5 class="text-xl newsreader leading-snug hover:text-primary transition-colors cursor-pointer">การวางโครงสร้างฐานข้อมูลเพื่อรองรับ AI ในอนาคต</h5>
+<div class="w-12 h-[1px] bg-primary"></div>
+</article>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="relative py-64 px-12 flex flex-col items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent opacity-50"></div>
+<div class="text-center z-10 max-w-2xl">
+<h2 class="text-5xl md:text-7xl newsreader font-light mb-12">เริ่มสร้างระบบ AI <br/>ของคุณวันนี้</h2>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-label text-sm uppercase tracking-[0.1em] px-16 py-5 rounded-sm transition-transform active:scale-95 shadow-xl shadow-primary/10">
+                    Consult Our Architects
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-32 bg-neutral-950">
+<div class="flex flex-col items-center justify-center w-full px-12 py-24 border-t border-neutral-800/20 space-y-12">
+<div class="flex gap-12 flex-wrap justify-center">
+<a class="font-['Inter'] uppercase tracking-[0.05em] text-[10px] text-neutral-500 hover:text-blue-300 transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Inter'] uppercase tracking-[0.05em] text-[10px] text-neutral-500 hover:text-blue-300 transition-colors" href="#">Terms of Service</a>
+<a class="font-['Inter'] uppercase tracking-[0.05em] text-[10px] text-neutral-500 hover:text-blue-300 transition-colors" href="#">Security Architecture</a>
+<a class="font-['Inter'] uppercase tracking-[0.05em] text-[10px] text-neutral-500 hover:text-blue-300 transition-colors" href="#">Contact</a>
+</div>
+<p class="font-['Inter'] uppercase tracking-[0.05em] text-[10px] text-neutral-500 opacity-100 hover:opacity-80 transition-colors">
+                © 2024 KORP AI AUTOMATION. SOVEREIGN INTELLIGENCE.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "lead-20260408-214055-590983",
+    "receivedAt": "2026-04-08T21:40:55.591010+00:00",
+    "contactName": "QA Test",
+    "companyName": "KORP QA",
+    "email": "qa@example.com",
+    "preferredContact": "Facebook",
+    "businessType": "QA",
+    "primaryNeed": "Sales Growth Systems",
+    "currentProblem": "testing",
+    "desiredOutcomes": "validate endpoint",
+    "additionalNotes": "automated qa test",
+    "estimatedBudget": "test",
+    "language": "th",
+    "source": "qa-script",
+    "status": "new"
+  }
+]
